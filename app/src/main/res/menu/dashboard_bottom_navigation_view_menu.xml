@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_round_dashboard"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/followingFragment"
+        android:icon="@drawable/ic_round_group"
+        android:title="@string/following" />
+
+    <item
+        android:id="@+id/notificationFragment"
+        android:icon="@drawable/ic_round_notifications"
+        android:title="@string/notification" />
+
+    <item
+        android:id="@+id/savedFragment"
+        android:icon="@drawable/ic_round_person"
+        android:title="@string/saved" />
+
+
+</menu>

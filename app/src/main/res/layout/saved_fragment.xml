@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/search_view_current_location"
+                style="@style/SearchViewStyle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:hint="@string/hint_search"
+                app:layout_constraintEnd_toStartOf="@+id/image_message"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/image_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/image_message"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/image_message"
+                app:srcCompat="@drawable/ic_round_settings"
+                app:tint="@color/color_gray" />
+
+            <ImageView
+                android:id="@+id/image_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/image_message"
+                app:layout_constraintEnd_toStartOf="@+id/image_settings"
+                app:layout_constraintTop_toTopOf="@+id/image_message"
+                app:srcCompat="@drawable/ic_round_add"
+                app:tint="@color/color_gray" />
+
+            <ImageView
+                android:id="@+id/image_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="@+id/search_view_current_location"
+                app:layout_constraintEnd_toStartOf="@+id/image_add"
+                app:layout_constraintTop_toTopOf="@+id/search_view_current_location"
+                app:srcCompat="@drawable/ic_round_message"
+                app:tint="@color/color_gray" />
+
+            <TextView
+                android:id="@+id/text_user_name"
+                style="@style/TextViewHeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/neha"
+                android:textSize="36sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/search_view_current_location" />
+
+            <ImageView
+                android:id="@+id/image_user"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/text_user_name"
+                app:srcCompat="@drawable/user_img" />
+
+            <TextView
+                android:id="@+id/text_followers_following_count"
+                style="@style/TextViewHeaderStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/show_followers_following_count"
+                android:textSize="14sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_user_name" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:scrollbars="none"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/text_followers_following_count">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <TextView
+                        android:id="@+id/text_boards"
+                        style="@style/TagViewStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:text="@string/boards" />
+
+                    <TextView
+                        android:id="@+id/text_pins"
+                        style="@style/TextViewHeaderStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/pins"
+                        android:textColor="@color/color_gray" />
+
+                    <TextView
+                        android:id="@+id/text_tried"
+                        style="@style/TextViewHeaderStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/tried"
+                        android:textColor="@color/color_gray" />
+
+                    <TextView
+                        android:id="@+id/text_followers"
+                        style="@style/TextViewHeaderStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/followers"
+                        android:textColor="@color/color_gray" />
+
+                    <TextView
+                        android:id="@+id/text_tables"
+                        style="@style/TextViewHeaderStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:paddingLeft="20dp"
+                        android:paddingTop="8dp"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="8dp"
+                        android:text="@string/tables"
+                        android:textColor="@color/color_gray" />
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="32dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView"
+                tools:listitem="@layout/list_item_board" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

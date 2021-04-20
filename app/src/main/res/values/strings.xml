@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pinterest App UI</string>
+
+    <!--Bottom nav-->
+    <string name="home">Home</string>
+    <string name="following">Following</string>
+    <string name="notification">Notifications</string>
+    <string name="saved">Saved</string>
+
+
+    <string name="hint_search">Search</string>
+    <string name="all">All</string>
+    <string name="recipes">Recipes</string>
+    <string name="decor">Decor</string>
+    <string name="fashion_inspiration">Fashion Inspiration</string>
+    <string name="neha">Neha</string>
+    <string name="show_followers_following_count">487 followers. 224 following</string>
+    <string name="pins">Pins</string>
+    <string name="followers">Followers</string>
+    <string name="tried">Tried</string>
+    <string name="boards">Boards</string>
+    <string name="tables">Tables</string>
+
+
+</resources>
