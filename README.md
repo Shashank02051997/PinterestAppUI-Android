@@ -5,9 +5,9 @@ Try to create the UI of Pinterest App...😉😀😁😎
 
 **Please click the image below to enlarge.**
 
-<img src="" height="600" width="300" hspace="40"><img src="" height="600" width="300" hspace="40">
+<img src="https://github.com/Shashank02051997/PinterestAppUI-Android/blob/main/Screenshots/Screenshot_20210421-024432.png" height="600" width="300" hspace="40"><img src="https://github.com/Shashank02051997/PinterestAppUI-Android/blob/main/Screenshots/Screenshot_20210421-024438.png" height="600" width="300" hspace="40">
 
-<img src="" height="600" width="300" hspace="40">
+<img src="https://github.com/Shashank02051997/PinterestAppUI-Android/blob/main/Screenshots/Screenshot_20210421-024445.png" height="600" width="300" hspace="40">
 
 ## Contributing
 
